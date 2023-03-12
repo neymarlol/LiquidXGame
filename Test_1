@@ -1,0 +1,22 @@
+Test 1
+
+* The "Populate Array" function is spawning too many actors simultaneously,
+  which will cause the game to freeze. To address this issue,
+  the function should spawn only a few actors at a time, 
+  over multiple frames.
+
+* The "Print Array" function should take TArray by refrence so the function
+  dont have to duplicate the var. It should also be const so user knows it wont
+  mutate the variable
+
+* Print Array function should log a few elements of the array at a time over multiple 
+  frames to avoid any frame spikes and it should run sequencually with spawn actor function.
+
+* Function calls must either be locked to prevent them from being called during this 
+  process or have a system in place to handle multiple calls by keeping track of the 
+  requested actors.
+
+* It is possible to allocate large chunks of memory with FMalloc. 
+  This method enables faster spawning of multiple actors, 
+  as a single memory block can hold mulriple actors and only requires 
+  one allocation call per chunk.
