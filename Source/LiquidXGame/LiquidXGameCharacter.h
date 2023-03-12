@@ -42,8 +42,16 @@ class ALiquidXGameCharacter : public ACharacter
 	class UInputAction* DashAction;
 
 public:
+
 	ALiquidXGameCharacter();
 	
+	// Parkour movement comp
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = CustomMovement)
+	class UParkourMovementComponent* ParkourMovement;
+
+	// Niagra Dash component
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = CustomMovement)
+	class UNiagaraComponent* NiagaraComp;
 
 protected:
 
