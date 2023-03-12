@@ -1,0 +1,41 @@
+
+I have decided to create a platformer game, incorporating a double jump and dash mechanic that I have always been fond of. 
+To achieve this, I have utilized my collective knowledge and conducted research.
+
+However, my current PC is quite old, and my C drive has limited storage space. 
+Therefore, I downloaded UE5 and Visual Studio 2022 onto my D drive 
+and ran a practice project to ensure everything was functioning correctly.
+
+Unfortunately, due to the low disk space, the engine experienced crashes, asset reload errors, 
+and compile times that lasted for up to 40 minutes upon reopening the project, including modules 
+or other header files. Furthermore, I did not have enough space to download all the necessary VS plugins
+for the full development experience.
+
+To address these issues, I monitored memory consumption and deleted intermediate, binary, 
+and derived cache files while also rebuilding VS files when needed. However, the extended 
+compile times were still a significant hindrance to the development and iteration process.
+
+Therefore, I decided to use Unreal's intended pipeline for game creation to mitigate the high compile times
+and improve the development experience.
+
+I initially prototyped the game using blueprints and then constructed a small obstacle course. 
+Once I was satisfied with the game's flow and mechanics, I proceeded to design the gameplay architecture. 
+I opted for composition in the gameplay framework as it maintains all features modular 
+and facilitates ease of use.
+
+Using C++, I developed a more comprehensive and structured movement system that included air jumps and 
+a dash mechanic. I further refined the mechanics, tested the features, and resolved any bugs.
+
+Although I utilized this process to minimize the compile time spent on the project, it still took 
+an hour and thirty minutes to compile every time I incorporated a new .h file or a module.
+
+The blueprint phase consumed 45 minutes, while the C++ phase, which involved polishing and 
+level mechanics, took two and a half hours. This time includes the extra time spent on
+opening and loading asset graphs.
+
+If I had more time, I would focus on enhancing the dash and double jump mechanics. 
+Regarding the jump mechanic, I would introduce an air flip animation with wind visual effects 
+and sound effects to indicate the air jump thrust. For the dash mechanic, I would create a 
+dash animation accompanied by camera line effects. Additionally, I would use better sprites 
+for the dash visual effects and implement sound effects that convey the feeling of piercing 
+through the wind while dashing.
