@@ -6,7 +6,7 @@ Test 1
   over multiple frames.
 
 * The "Print Array" function should take TArray by refrence so the function
-  dont have to duplicate the var. It should also be const so user knows it wont
+  donesn't have to duplicate the var. It should also be const so user knows it wont
   mutate the variable
 
 * Print Array function should log a few elements of the array at a time over multiple 
@@ -18,5 +18,5 @@ Test 1
 
 * It is possible to allocate large chunks of memory with FMalloc. 
   This method enables faster spawning of multiple actors, 
-  as a single memory block can hold mulriple actors and only requires 
+  as a single memory block can hold multiple actors and only requires 
   one allocation call per chunk.
